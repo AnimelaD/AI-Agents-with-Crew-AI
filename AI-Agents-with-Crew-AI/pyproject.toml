@@ -1,0 +1,23 @@
+[project]
+name = "reasearch_devops_tools"
+version = "0.1.0"
+description = "reasearch-devops-tools using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.114.0,<1.0.0"
+]
+
+[project.scripts]
+reasearch_devops_tools = "reasearch_devops_tools.main:run"
+run_crew = "reasearch_devops_tools.main:run"
+train = "reasearch_devops_tools.main:train"
+replay = "reasearch_devops_tools.main:replay"
+test = "reasearch_devops_tools.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
