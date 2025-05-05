@@ -41,24 +41,18 @@ Both agents are powered by the **Crew AI** framework and the **Llama 3.1** langu
 
 First, create a Python virtual environment to keep dependencies isolated.
 
-```bash
 python3 -m venv ai-agents-env
 source ai-agents-env/bin/activate  # On Windows use ai-agents-env\Scripts\activate
 2. Install Dependencies
 Install the Crew AI package using pip:
 
-bash
-Copy
-Edit
 pip install crew-ai
 If you don't have the Llama model installed, follow the instructions to install Ollama and pull the Llama 3.1 model.
 
 3. Generate Project Structure
 Create the project structure using Crew AI's crew create command:
 
-bash
-Copy
-Edit
+
 crew create
 When prompted, choose the following:
 
@@ -69,9 +63,6 @@ Llama Model Version: Llama 3.1 (or newer if available)
 4. Install Project Dependencies
 Install any additional dependencies using the crew install command:
 
-bash
-Copy
-Edit
 crew install
 Project Structure
 After generating the project, Crew AI will create a directory structure with the following important files:
@@ -96,9 +87,6 @@ Running the Project
 1. Execute the Agents
 Run the following command to execute the agents:
 
-bash
-Copy
-Edit
 crew run
 2. Review the Results
 Once the agents finish executing, the output will be saved in a Markdown file (reports.md). You can view this report to see the summarized Kubernetes trends.
